@@ -7,6 +7,7 @@
 - En el README.md falta información de como levantar el proyecto.
 - Sugeriría un Dockerfile para facilitar la creación del contenedor de la aplicación, asi como un docker-compose para facilitar el despliegue en local de todos los elementos necesarios.
 - Si quisieramos evitar la necesidad de instalar maven en los ordenadores de los desarrolladores, necesitaríamos generar un mvnw. Para ello un desarrollador que tenga maven tiene que ejecutar este código ```mvn wrapper:wrapper```.
+- No hay logs ni estructura para crearlos.
 
 ## Testeo
 - El unico test es unitario y no testea prácticamente nada del método asociado, mas que que busca en el repositorio y que guarda. Si nos basamos en el nombre del método Lo nuclear del método testeado AdsServiceImpl#calculateScores debería ser calcular la valoración, y no es comprobado que la calcule bien. Varios métodos a lo largo de la API tienen errores que de tener test relevantes y bien construidos serían reconocidos fácilmente sin necesitar una revisión profunda de código.
